@@ -10,8 +10,8 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     QString fileName = ":/mueller.dict";
-    load_dictionary(fileName);
     statusBar(fileName);
+    load_dictionary(fileName);
     ui->wordList->addItems(words);
 }
 
