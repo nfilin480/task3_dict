@@ -83,7 +83,6 @@ void MainWindow::openNewDictionary(){
 void MainWindow::statusBar(QString fileName){
     QString a = QCoreApplication::applicationDirPath();
     a.append("/mueller.dict");
-    if ((fileName == ":/mueller.dict") || (fileName == a))
-    fileName = tr("Standart dictionary");
+    if (fileName == ":/mueller.dict") fileName = tr("Standart dictionary");
     ui->statusbar->showMessage(fileName);
 }
